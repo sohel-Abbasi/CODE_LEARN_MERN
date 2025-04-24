@@ -17,10 +17,8 @@ const MONGO_URL = process.env.MONGO_URL;
 const CLIENT_URL = "http://localhost:5173";
 app.use(
   cors({
-    origin: [
+    origin: 
       process.env.CLIENT_URL || CLIENT_URL,
-      "https://code-learn-mern.onrender.com",
-    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })

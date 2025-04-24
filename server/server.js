@@ -19,7 +19,7 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL || CLIENT_URL,
-      "https://code-learn-mern.onrender.com",
+      "https://tech-learn-mern.onrender.com",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],

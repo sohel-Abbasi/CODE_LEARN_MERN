@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const _dirname = path.resolve();
 const MONGO_URL = process.env.MONGO_URL;
-const CLIENT_URL = "http://localhost:5173";
+const CLIENT_URL = "https://tech-learn-mern.onrender.com";
 app.use(
   cors({
     origin: process.env.CLIENT_URL || CLIENT_URL,
